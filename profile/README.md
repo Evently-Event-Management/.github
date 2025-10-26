@@ -18,7 +18,7 @@
 [![Project Demo](https://img.youtube.com/vi/_OS4JIPljS4/hqdefault.jpg)](https://youtu.be/_OS4JIPljS4)
 > *Comprehensive demonstration of the platform features, architecture decisions, and live system walkthrough*
 
-### 🔧 Technical Deep Dive & Deployment Guide
+### 🔧 Technical Deep Dive into Architecture, Deployment and Testing
 [![Technical Deep Dive](https://img.youtube.com/vi/w-q5hqdgbKw/hqdefault.jpg)](https://youtu.be/w-q5hqdgbKw)
 > *In-depth technical explanation of the CQRS pattern, CDC implementation, and Kubernetes deployment on AWS*
 
