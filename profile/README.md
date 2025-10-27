@@ -182,8 +182,7 @@ Client Browser ←─(SSE Connection)─→ Spring WebFlux Query Service
 | **Event Command** | Java 21 | Spring Boot 3.2 | Write operations, business logic |
 | **Event Query** | Java 21 | Spring WebFlux | Read operations, SSE streaming |
 | **Order Service** | Go 1.21 | Gin, GORM | High-concurrency ticket purchasing |
-| **Scheduler Service** | Go 1.21 | Gin | Event scheduling, reminders |
-| **Email Service** | Go 1.21 | - | Async email notifications |
+| **Scheduler & Email Service** | Go 1.21 | Gin | Event scheduling, reminders, Async email notifications |
 
 ### Data Layer
 
@@ -504,8 +503,7 @@ All services expose standard endpoints:
 ### Main Repositories
 
 - **[infra-ticketly](https://github.com/Ticketly-Event-Management/infra-ticketly)**: Infrastructure as Code, Kubernetes manifests, deployment scripts
-- **[infra-depl](https://github.com/Ticketly-Event-Management/infra-depl)**: Deployment configurations and manifests
-- **[infra-api-gateway](https://github.com/Ticketly-Event-Management/infra-api-gateway)**: API Gateway service (Not used in deployment)
+- **[infra-api-gateway](https://github.com/Ticketly-Event-Management/infra-api-gateway)**: API Gateway service (Not used in deployment, replaces by k8s traefik ingress)
 - **[ms-event-seating](https://github.com/Ticketly-Event-Management/ms-event-seating)**: Event and seating management service (Command Model - Write)
 - **[ms-event-seating-projection](https://github.com/Ticketly-Event-Management/ms-event-seating-projection)**: Event seating projection and query service (Query Model - Read)
 - **[ms-ticketing](https://github.com/Ticketly-Event-Management/ms-ticketing)**: Order and ticketing service with Stripe integration
