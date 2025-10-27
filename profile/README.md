@@ -468,12 +468,6 @@ targetCPUUtilization: 70%
 targetMemoryUtilization: 80%
 ```
 
-### Database Scaling
-
-- **PostgreSQL**: Vertical scaling via RDS instance types + Read Replicas for reporting
-- **MongoDB**: Replica set with 3 members for high availability
-- **Redis**: ElastiCache with Multi-AZ automatic failover
-
 ### Geographic Distribution
 
 Current: Single-region deployment (ap-south-1)
@@ -484,7 +478,7 @@ Future: Multi-region with Route53 GeoDNS routing
 ## 🔍 Monitoring & Observability
 
 ### Application Metrics
-- **Kubernetes Dashboard**: Pod health, resource usage, deployment status
+- **Kubernetes Dashboard & OpenLense**: Pod health, resource usage, deployment status
 - **Dozzle**: Real-time container log aggregation
 - **Kafka UI**: Topic lag, consumer group status, message inspection
 
