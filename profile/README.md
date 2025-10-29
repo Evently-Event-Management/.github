@@ -49,13 +49,13 @@ Ticketly implements a strict **Command Query Responsibility Segregation (CQRS)**
 
 ### High-Level System Architecture
 
-![High-Level Architecture](https://raw.githubusercontent.com/Ticketly-Event-Management/.github/main/architecture/high-level-architecture.png)
+![High-Level Architecture](https://raw.githubusercontent.com/Evently-Event-Management/.github/main/architecture/high-level-architecture.png)
 
 *The complete system showing user clients, core microservices, external AWS services, and third-party integrations*
 
 ### Infrastructure & Deployment Architecture
 
-![Infrastructure Architecture](https://raw.githubusercontent.com/Ticketly-Event-Management/.github/main/architecture/infrastructure-architecture.png)
+![Infrastructure Architecture](https://raw.githubusercontent.com/Evently-Event-Management/.github/main/architecture/infrastructure-architecture.png)
 
 *AWS infrastructure showing VPC layout, K3s cluster topology, load balancing, and data flow between components*
 
@@ -502,14 +502,14 @@ All services expose standard endpoints:
 
 ### Main Repositories
 
-- **[infra-ticketly](https://github.com/Ticketly-Event-Management/infra-ticketly)**: Infrastructure as Code, Kubernetes manifests, deployment scripts
-- **[infra-api-gateway](https://github.com/Ticketly-Event-Management/infra-api-gateway)**: API Gateway service (Not used in deployment, replaces by k8s traefik ingress)
-- **[ms-event-seating](https://github.com/Ticketly-Event-Management/ms-event-seating)**: Event and seating management service (Command Model - Write)
-- **[ms-event-seating-projection](https://github.com/Ticketly-Event-Management/ms-event-seating-projection)**: Event seating projection and query service (Query Model - Read)
-- **[ms-ticketing](https://github.com/Ticketly-Event-Management/ms-ticketing)**: Order and ticketing service with Stripe integration
-- **[ms-scheduling](https://github.com/Ticketly-Event-Management/ms-scheduling)**: Scheduling and reminders service
-- **[ticketly-shared-dto](https://github.com/Ticketly-Event-Management/ticketly-shared-dto)**: Shared data transfer objects across services
-- **[fe-web](https://github.com/Ticketly-Event-Management/fe-web)**: Next.js frontend web application
+- **[infra-ticketly](https://github.com/Evently-Event-Management/infra-ticketly)**: Infrastructure as Code, Kubernetes manifests, deployment scripts
+- **[infra-api-gateway](https://github.com/Evently-Event-Management/infra-api-gateway)**: API Gateway service (Not used in deployment, replaces by k8s traefik ingress)
+- **[ms-event-seating](https://github.com/Evently-Event-Management/ms-event-seating)**: Event and seating management service (Command Model - Write)
+- **[ms-event-seating-projection](https://github.com/Evently-Event-Management/ms-event-seating-projection)**: Event seating projection and query service (Query Model - Read)
+- **[ms-ticketing](https://github.com/Evently-Event-Management/ms-ticketing)**: Order and ticketing service with Stripe integration
+- **[ms-scheduling](https://github.com/Evently-Event-Management/ms-scheduling)**: Scheduling and reminders service
+- **[ticketly-shared-dto](https://github.com/Evently-Event-Management/ticketly-shared-dto)**: Shared data transfer objects across services
+- **[fe-web](https://github.com/Evently-Event-Management/fe-web)**: Next.js frontend web application
 
 ---
 
@@ -527,7 +527,7 @@ All services expose standard endpoints:
 
 ```bash
 # Clone the infrastructure repository
-git clone https://github.com/Ticketly-Event-Management/infra-ticketly.git
+git clone https://github.com/Evently-Event-Management/infra-ticketly.git
 cd infra-ticketly
 
 # Configure local hosts
@@ -564,7 +564,7 @@ open http://localhost:9999           # Dozzle Logs
 
 ### Production Deployment
 
-See the comprehensive [Deployment Guide](https://github.com/Ticketly-Event-Management/infra-ticketly/blob/main/README.md) for:
+See the comprehensive [Deployment Guide](https://github.com/Evently-Event-Management/infra-ticketly/blob/main/README.md) for:
 - AWS infrastructure provisioning
 - Kubernetes cluster setup
 - Microservices deployment
@@ -611,10 +611,10 @@ npm test -- tests/order/
 
 ## 📚 Documentation
 
-- **[Infrastructure Guide](https://github.com/Ticketly-Event-Management/infra-ticketly/blob/main/README.md)**: Complete infrastructure setup and deployment
-- **[K3s Deployment](https://github.com/Ticketly-Event-Management/infra-ticketly/blob/main/k8s/k3s/README.md)**: Kubernetes-specific deployment guide
-- **[Load Testing Results](https://github.com/Ticketly-Event-Management/infra-ticketly/blob/main/load-testing/README.md)**: Detailed performance benchmarks
-- **[API Documentation](https://github.com/Ticketly-Event-Management/infra-ticketly/wiki/API-Documentation)**: Complete API reference
+- **[Infrastructure Guide](https://github.com/Evently-Event-Management/infra-ticketly/blob/main/README.md)**: Complete infrastructure setup and deployment
+- **[K3s Deployment](https://github.com/Evently-Event-Management/infra-ticketly/blob/main/k8s/k3s/README.md)**: Kubernetes-specific deployment guide
+- **[Load Testing Results](https://github.com/Evently-Event-Management/infra-ticketly/blob/main/load-testing/README.md)**: Detailed performance benchmarks
+- **[API Documentation](https://github.com/Evently-Event-Management/infra-ticketly/wiki/API-Documentation)**: Complete API reference
 - **Architecture Decision Records**: Coming soon
 
 ---
@@ -662,9 +662,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact & Support
 
-- **Documentation**: [GitHub Wiki](https://github.com/Ticketly-Event-Management/.github/wiki)
-- **Issues**: [GitHub Issues](https://github.com/Ticketly-Event-Management/.github/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Ticketly-Event-Management/.github/discussions)
+- **Documentation**: [GitHub Wiki](https://github.com/Evently-Event-Management/.github/wiki)
+- **Issues**: [GitHub Issues](https://github.com/Evently-Event-Management/.github/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Evently-Event-Management/.github/discussions)
 
 ---
 
